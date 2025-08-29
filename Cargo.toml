@@ -1,0 +1,41 @@
+[package]
+name = "boost_thread"
+description = "Boost C++ library boost_thread packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_thread"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_thread"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_assert = { version = "0.1.0", path = "../boost_assert" }
+boost_atomic = { version = "0.1.0", path = "../boost_atomic" }
+boost_bind = { version = "0.1.0", path = "../boost_bind" }
+boost_chrono = { version = "0.1.0", path = "../boost_chrono" }
+boost_concept_check = { version = "0.1.0", path = "../boost_concept_check" }
+boost_config = { version = "0.1.0", path = "../boost_config" }
+boost_container = { version = "0.1.0", path = "../boost_container" }
+boost_container_hash = { version = "0.1.0", path = "../boost_container_hash" }
+boost_core = { version = "0.1.0", path = "../boost_core" }
+boost_date_time = { version = "0.1.0", path = "../boost_date_time" }
+boost_exception = { version = "0.1.0", path = "../boost_exception" }
+boost_function = { version = "0.1.0", path = "../boost_function" }
+boost_io = { version = "0.1.0", path = "../boost_io" }
+boost_move = { version = "0.1.0", path = "../boost_move" }
+boost_optional = { version = "0.1.0", path = "../boost_optional" }
+boost_predef = { version = "0.1.0", path = "../boost_predef" }
+boost_preprocessor = { version = "0.1.0", path = "../boost_preprocessor" }
+boost_smart_ptr = { version = "0.1.0", path = "../boost_smart_ptr" }
+boost_static_assert = { version = "0.1.0", path = "../boost_static_assert" }
+boost_system = { version = "0.1.0", path = "../boost_system" }
+boost_throw_exception = { version = "0.1.0", path = "../boost_throw_exception" }
+boost_tuple = { version = "0.1.0", path = "../boost_tuple" }
+boost_type_traits = { version = "0.1.0", path = "../boost_type_traits" }
+boost_utility = { version = "0.1.0", path = "../boost_utility" }
+boost_winapi = { version = "0.1.0", path = "../boost_winapi" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
